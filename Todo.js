@@ -3,10 +3,9 @@ function addTodo() {
     if (gettingTodos) {
         var myTodosFromLS = JSON.parse(localStorage.getItem("todos")) || [];
         myTodosFromLS.push(gettingTodos);
-        console.log(myTodosFromLS, "myTodosFromLS");
-        localStorage.setItem("Todos", JSON.stringify(myTodosFromLS))
+        localStorage.setItem("Todos", JSON.stringify(myTodosFromLS));
         document.getElementById('todosHere').value = "";
-        alert("Todo added !")
+        alert("Todo added successfully !");
     }
     else {
         alert('Add todo first,before submitting !');
