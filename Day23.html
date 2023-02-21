@@ -8,62 +8,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #firstdiv{
+        #bodydiv{
+            background-image: url(ranger-4df6c1b6.png);
+            margin: 0%;
+            padding: 0%;
+        }
+        #firstdiv {
             margin: auto;
             width: 30%;
+            border: 3px solid black;
             height: 200px;
-            border: 1px solid black;
             padding-left: 100px;
         }
+        #firstdiv input{
+            height: 60px;
+            width: 90%;
+            font-size: 22px;
+            margin-left: -70px;
+            border-radius: 15px;
+        }
+        #firstdiv>h1:nth-child(3) {
+            cursor: pointer;
+        }
+
         #displayTodos {
-            border: 1px solid black;
+            border: 3px solid black;
             width: 70%;
             height: 500px;
             margin: auto;
         }
-        #header, 
-        #row{
+
+        #row {
             display: flex;
             justify-content: space-around;
         }
-        #dt>div:nth-child(1){
-            border: 1px solid black;
+
+        #dt>div:nth-child(1) {
+            border: 3px solid black;
             width: 70%;
             height: 50px;
             margin: auto;
             display: flex;
             justify-content: space-around;
         }
+
         #dt>div:nth-child(2)>p{
-            border-bottom: 1px solid black;
+            border-bottom: 1px dotted black;
             width: 70%;
-        
+            font-size: 15px;
+
         }
-        #delete{
+
+        #delete {
             margin-top: 10px;
         }
     </style>
 </head>
 
 <body>
-    <div id="firstdiv">
-        <h1>Todo System</h1>
+    <div id="bodydiv">
+        <div id="firstdiv">
+            <h1>Todo System</h1>
 
-        <input id="todosHere" placeholder="Type your todos.." />
-        <h1 onclick="addTodo ()">Submit Todo !</h1>
-    </div>
-    <h1 id="heading">Todos here</h1>
-    <div id="dt">
-        <div>
-            <p>Todos</p>
-            <p>Completed ?</p>
+            <input id="todosHere" placeholder="Type your todos.." />
+            <h1 onclick="addTodo ()">Submit Todo !</h1>
         </div>
-        <div id="displayTodos">
+        <h1 id="heading"> Your Todos list is here</h1>
+        <div id="dt">
+            <div>
+                <p>Todos</p>
+                <p>Completed ?</p>
+            </div>
+            <div id="displayTodos">
 
+            </div>
         </div>
-    </div>
 
-    <script src="day23.js"></script>
+        <script src="day23.js"></script>
+    </div>
 </body>
 
 </html>
