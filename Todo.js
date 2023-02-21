@@ -3,8 +3,9 @@ function addTodo() {
     if (gettingTodos) {
         var myTodosFromLS = JSON.parse(localStorage.getItem("todos")) || [];
         myTodosFromLS.push(gettingTodos);
-        localStorage.setItem("Todos", JSON.stringify(myTodosFromLS));
-        document.getElementById('todosHere').value = "";
+        localStorage.setItem("todosHere", JSON.stringify(myTodosFromLS));
+        document.getElementById("todosHere").value = "";
+
         alert("Todo added successfully !");
     }
     else {
