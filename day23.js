@@ -22,7 +22,7 @@ function cs() {
     for (var i = 0; i < gettingTodosFromLS.length; i++) {
         finalStructure += `<div id = "row">
         <p>${gettingTodosFromLS[i]}</p>
-        <i onclick= "deleteDodo(${i})" class="fa-solid fa-trash"></i>
+        <i id="delete" onclick= "deleteDodo(${i})" class="fa-solid fa-trash"></i>
         </div>`
     }
     divFromHtml.innerHTML = finalStructure;
