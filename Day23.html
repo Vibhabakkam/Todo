@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/06489297db.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #firstdiv{
+            margin: auto;
+            width: 30%;
+            height: 200px;
+            border: 1px solid black;
+            padding-left: 100px;
+        }
+        #displayTodos {
+            border: 1px solid black;
+            width: 70%;
+            height: 500px;
+            margin: auto;
+        }
+        #header, 
+        #row{
+            display: flex;
+            justify-content: space-around;
+        }
+        #dt>div:nth-child(1){
+            border: 1px solid black;
+            width: 70%;
+            height: 50px;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+        }
+        #dt>div:nth-child(2)> p {
+            border-bottom: 1px solid black;
+            width: 70%;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <div id="firstdiv">
+        <h1>Todo System</h1>
+
+        <input id="todosHere" placeholder="Type your todos.." />
+        <h1 onclick="addTodo ()">Submit Todo !</h1>
+    </div>
+    <h1 id="heading">Todos here</h1>
+    <div id="dt">
+        <div>
+            <p>Todos</p>
+            <p>Completed ?</p>
+        </div>
+        <div id="displayTodos">
+
+        </div>
+    </div>
+
+    <script src="day23.js"></script>
+</body>
+
+</html>
